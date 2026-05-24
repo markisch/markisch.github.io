@@ -26,7 +26,8 @@ The `sextpua` and `octpua` variants are special in that the make use of the char
 Support for colored output is shared with the dumb terminal. 
 
 Below is an example from `simple.dem` using `octants mono size 100,30`:
-1.5 𜶖𜶙𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜵎𜴆𜴔𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴣𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴣𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜵁𜵁𜵁𜵁𜵁𜵁𜵁𜴔𜴔𜴔𜴔𜴔𜴔𜵈   
+```
+  1.5 𜶖𜶙𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜴳𜵎𜴆𜴔𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴣𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴣𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜴆𜵁𜵁𜵁𜵁𜵁𜵁𜵁𜴔𜴔𜴔𜴔𜴔𜴔𜵈   
       ▐▐      sin(x) 𜴘𜴧𜴧𜴧𜴧𜴉▌                                        𜺣𜺣𜴉𜴉𜴉𜴉𜴀𜴀𜴀𜺨𜺨𜺨𜺨𜺨𜺨             ▌   
       ▐▐     atan(x) 𜴘𜴘𜴘𜴘𜴘 ▌                                  𜺣𜴉𜴀𜴀𜺨𜺨                            ▌   
       ▐▐cos(atan(x)) 𜴘𜴉𜴘𜴉𜴘𜴉▌                                𜴉𜴀                                  ▌   
@@ -52,7 +53,7 @@ Below is an example from `simple.dem` using `octants mono size 100,30`:
       ▐                   𜺠𜺠𜺠𜴘𜴘𜴘𜴘𜴃𜴃𜺫                                                            ▌   
  -1.5 ▐𜷋𜷋𜷋𜷋𜷋𜷋𜶳𜶳𜶳𜶳𜶳𜶳𜶳𜶭𜶭𜶭𜶭𜶭𜶭▂▂▂𜶻▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂𜷋▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂𜷋▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▌   
      -10                    -5                     0                     5                     10  
-
+```
 ### dumb terminal
 
 The dumb terminal was introduced way back in gnuplot version 3.0 to support "dumb" terminals without graphical capabilities. It received support for enhanced text in version 4.0, for UTF-8 characters in version 4.6, and color support in version 5.2. Color support requires the support of [ANSI escape sequences for colors](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors). 
