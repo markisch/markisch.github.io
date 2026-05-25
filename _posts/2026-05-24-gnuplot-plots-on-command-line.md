@@ -69,9 +69,9 @@ The terminal can also produce SVG files, which resemble the console output.  You
 
 ## Graphics Output
 
-Today, many terminal emulator programs support some sort of graphical inline output.  Historically, [sixel graphics] was supported by some [DEC terminals](https://vt100.net/docs/vt3xx-gp/chapter14.html).  The kitty* terminals support the newer graphics interface introduced by the [KiTTY terminal](https://sw.kovidgoyal.net/kitty/).  Both formats are supported by a growing number of terminal emulators.
+Today, many terminal emulator programs support some sort of graphical inline output.  Historically, [sixel graphics](https://en.wikipedia.org/wiki/Sixel) was supported by some [DEC terminals](https://vt100.net/docs/vt3xx-gp/chapter14.html).  The kitty* terminals support the newer graphics interface introduced by the [KiTTY terminal](https://sw.kovidgoyal.net/kitty/).  Both formats are supported by a growing number of terminal emulators.
 
-An older alternative are the [`tek40`](tek40-terminal) and [`regis`](regis-terminal) terminals.  These support output to terminal emulators which are compatible to the Tektronix 40xx series, or support REGIS graphics language.  Both terminals open a new window for the graphics output.  The use case for these is less clear, since there are better alternatives with full graphics support like the `qt`, and `wxt` terminals.
+An older alternative are the [`tek40`](tek40-terminal) and [`regis`](regis-terminal) terminals.  These support output to terminal emulators which are compatible to the Tektronix 40xx series, or support ReGIS graphics language.  Both terminals open a new window for the graphics output.  The use case for these is less clear, since there are better alternatives with full graphics support like the `qt`, and `wxt` terminals.
 
 ### kittycairo and kittygd terminals
 
@@ -79,7 +79,9 @@ An older alternative are the [`tek40`](tek40-terminal) and [`regis`](regis-termi
 
 ### sixelgd and sixeltek terminals
 
-The sixelgd and sixeltek gnuplot terminals create sixel graphics output.  Internally, they use either the superior [libgd library](https://libgd.github.io/), or gnuplot's own bitmap routines.  For the status of sixel support in terminal emulators see [https://www.arewesixelyet.com/](https://www.arewesixelyet.com/). 
+The `sixelgd` and `sixeltek` gnuplot terminals create [sixel graphics](https://en.wikipedia.org/wiki/Sixel) output.  Internally, they use either the superior [libgd library](https://libgd.github.io/), or gnuplot's own bitmap routines.  Meanwhile, support for sixel graphics in terminal emulators is rather wide-spread, see the [status of sixel support](https://www.arewesixelyet.com/). 
+
+The name `sixeltek` is sort of a misnomer.  The original submission of the `sixel` terminal by Erik Olofson, landed in the `tek.trm` source file, even though the standard is only supported by DEC terminals.  Later, when my `sixelgd` terminal was introduced, it was renamed according to its location to `sixeltek`. 
 
 ### tek40 terminal
 
@@ -87,4 +89,5 @@ The sixelgd and sixeltek gnuplot terminals create sixel graphics output.  Intern
 
 ### regis terminal
 
+ReGIS, short for Remote Graphic Instruction Set, is a vector graphics markup language. According to [this site](https://github.com/feilipu/ReGIS), xterm is the only known software solution to support it.  It is hence pretty obsolete and the terminal doesn't support many modern features of gnuplot.  I do not recommend you use it. 
 ...
